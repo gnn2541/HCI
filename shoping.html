@@ -1,0 +1,247 @@
+
+
+<!DOCTYPE html>
+<html>
+<title>BongBong Shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+        <div class="w3-container w3-display-container w3-padding-16">
+          <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+          <h3 class="w3-wide"><b>BongBong Shop</b></h3>
+        </div>
+        <a href="web.html" class="w3-button w3-khaki w3-padding-large w3-large">HOME</a>
+        <p><a href="#jeans" class="w3-button w3-khaki w3-padding-large w3-large">Light Stick</a></p>
+        
+      
+          <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      
+          
+          </div>
+      
+       
+        <a href="#footer" class="w3-button w3-khaki w3-padding-large w3-large">Contact</a> 
+        <p>  <a href="javascript:void(0)" class="w3-button w3-khaki w3-padding-large w3-large" 
+            onclick="document.getElementById('newsletter').style.display='block'">FAQ ?</a> 
+      </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+    <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </header>
+  
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:250px">
+  
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+    
+    <!-- Top header -->
+    <header class="w3-container w3-xlarge">
+      <p class="w3-left w3-bold">SHOPPING CART <i class="fa fa-shopping-cart"></i>
+        <p class="w3-right">
+          <button class="w3-button w3-hover-amber fa fa-heart"></button>
+          <button class="w3-button w3-hover-amber fa fa-search"></button>
+        </p>
+      </p>
+    </header>
+
+    <style>
+        table, td, th {  
+          border: 1px solid #ddd;
+          text-align: left;
+        }
+        
+        table {
+          border-collapse: collapse;
+          width: 65%;
+        }
+        
+        th, td {
+          padding: 20px;
+        }
+    </style>
+    <table class="w3-left">
+        <tr>
+          <th>Order</th>
+          <th>Detail</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+          <td>
+              <img src="w3images/id.jpg"class="w-left" style="width:45%">
+         </td>
+         <td style="text-align:left">(G) I-DLE OFFICIAL LIGHT STICK</td>
+          <td> $13.63
+            <select id="cars" name="cars">
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+                <option value="seven">7</option>
+                <option value="eight">8</option>
+              </select>
+          </td>
+          <td>$13.63</td>
+        </tr>
+      </table>
+
+    <table class="w3-right w3-light-grey" style="width: 30%;">
+        <tr>
+          <th>
+          <label for="adr">ADD A DISCOUNT CODE </label>
+            <input type="text" id="adr" name="address">
+            <button class="w3-right w3-button w3-white w3-border w3-border-black " style="padding: 2px 5px;">ADD</button>
+            
+            <p class="w3-left">Order value</p>
+            <p class="w3-right">$13.63</p><br><br><br>
+            <p class="w3-text-grey">Shipping &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $3</p>
+            <p class="w3-left">Total</p>
+            <p class="w3-right">$16.63</p><br><br>
+
+            
+            <button class="w3-button w3-white w3-border w3-border-black w3-black  w3-hover-grey " style="padding: 3px 30px;">CONTINUE TO CHECKOUT</button>
+            <p class="w3-small">We accept</p>
+            <div class="icon-container w3-xlarge">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                <i class="fa fa-cc-paypal" style="color:navy;"></i>
+            </div>
+              <p class="w3-tiny">Prices and delivery costs are not confirmed until you've reached the checkout.</p>
+          </th>
+        </tr>
+    </table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    
+   <!-- Banner -->
+   <div class="w3-container ">
+    <img src="w3images/th.gif"  width="900"  height="200">
+  </div>
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> bongbong shop</p>
+        <p><i class="fa fa-fw fa-phone"></i> 097-xxxxxxx</p>
+        <p><i class="fa fa-fw fa-envelope"></i> bongbongshop@hotmail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        
+      </div>
+    </div>
+  </footer>
+
+  
+
+  <!-- End page content -->
+</div>
+
+<!-- FAQ -->
+<div id="newsletter" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+      <div class="w3-container w3-white w3-center">
+        <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+        <h2 class="w3-wide">FAQ ?</h2>
+     <div>
+      <div style="background-color: #cf9490";>How do I shop with BongBong Shop? </div>
+     
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pretium diam quis erat pretium mattis in at eros.</p>
+      
+      <div style="background-color: #cf9490";>What should I do if I would like to return an order I have made, How many days that I can decide to return ?</div>
+      <p>Proin at quam lobortis, rutrum quam quis, pellentesque libero. Donec venenatis, lacus nec rutrum ornare, nulla velit gravida purus, eu ultricies neque neque nec ipsum
+          
+      <div style="background-color: #cf9490";> How can I check my order status after placing an order? </div>
+      
+        <p>Aliquam velit urna, ultrices non est ut, tincidunt malesuada urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum vitae dui vel mauris vulputate interdum.</p>
+      
+      <div style="background-color: #cf9490";> How do I ship to an international address? </div>
+     
+        <p>Sed mattis mi orci, sed commodo tortor convallis vitae.</p>
+      </div>
+      
+     
+      
+      
+      
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
